@@ -46,7 +46,7 @@ public class CountryResource {
      */
     @PostMapping("/countries")
     public ResponseEntity<Country> createCountry(@RequestBody Country country) throws URISyntaxException {
-        log.debug("REST request to save Country : {}", country);
+        log.debug("REST request to save Country OK? : {}", country);
         if (country.getId() != null) {
             throw new BadRequestAlertException("A new country cannot already have an ID", ENTITY_NAME, "idexists");
         }
