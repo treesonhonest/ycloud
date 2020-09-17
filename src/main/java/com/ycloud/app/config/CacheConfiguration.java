@@ -47,6 +47,7 @@ public class CacheConfiguration {
             createCache(cm, com.ycloud.app.domain.User.class.getName());
             createCache(cm, com.ycloud.app.domain.Authority.class.getName());
             createCache(cm, com.ycloud.app.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.ycloud.app.domain.School.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
