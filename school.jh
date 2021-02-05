@@ -1,0 +1,4 @@
+entity School {
+	name String
+    address String
+}
